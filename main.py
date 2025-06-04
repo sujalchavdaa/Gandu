@@ -47,8 +47,8 @@ bot = Client(
     bot_token=BOT_TOKEN
 )
 
-AUTH_USER = os.environ.get('AUTH_USERS', '5680454765').split(',')
-AUTH_USERS = [int(user_id) for user_id in AUTH_USER]
+AUTH_USER = os.environ.get('AUTH_USERS', '6883471516').split(',')
+AUTH_USERS = [int(@youcndoitbro) for user_id in AUTH_USER]
 if int(OWNER) not in AUTH_USERS:
     AUTH_USERS.append(int(OWNER))
 CHANNEL_OWNERS = {}
@@ -443,7 +443,7 @@ async def txt_handler(bot: Client, m: Message):
         #print(f"Channel ID not in CHANNELS_LIST", m.chat.id)
         #await m.reply_text(f"__**Oops, you are not authorized to use this command**__")
         #return
-    editable = await m.reply_text(f"**🔹Hi I am Poweful TXT Downloader📥 Bot.\n🔹Send me the txt file and wait.**")
+    editable = await m.reply_text(f"**🔹Hi I am Poweful TXT Downloader📥 Bot.\n🔹Send me the txt file and wait karle madrsod.**")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
